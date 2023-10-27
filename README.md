@@ -1,4 +1,4 @@
-# projeto_final_4
+# projeto_final_4 developed by Nathalia Andreassa, Isa PN, Daniel Bárbara
 Repositório de projeto final do grupo 4, bootcamp 6 #sintra
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
