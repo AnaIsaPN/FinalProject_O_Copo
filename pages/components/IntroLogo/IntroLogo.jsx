@@ -1,4 +1,4 @@
-import styles from "./introLogo.module.css";
+import styles from "./IntroLogo.module.css";
 
 export function IntroLogo() {
   return (
