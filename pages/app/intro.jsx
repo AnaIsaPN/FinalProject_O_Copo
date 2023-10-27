@@ -2,7 +2,7 @@ import { IntroLogo } from "../../components/IntroLogo";
 import Spinner from "../../components/Spinner";
 import styles from "./intro.module.css";
 
-export function Intro() {
+export default function Intro() {
   return (
     <div className={styles.present}>
       <div className={styles.points}>
