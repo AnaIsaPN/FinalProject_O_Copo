@@ -1,6 +1,6 @@
 // components/UnsplashSelector.js
 import React, { useState } from 'react';
-import unsplash from '../../../utils/Unsplash';
+import unsplash from '../utils/Unsplash';
 import styles from "./UnsplashSelector.module.css"
 
 const UnsplashSelector = ({ onSelect, setHasContent }) => {
@@ -9,10 +9,11 @@ const UnsplashSelector = ({ onSelect, setHasContent }) => {
 
     const searchImages = async () => {
         try {
-            const response = await unsplash.search.getPhotos({ 
-                query, 
-                perPage: 50, 
-                orientation: 'landscape' });
+            const response = await unsplash.search.getPhotos({
+                query,
+                perPage: 50,
+                orientation: 'landscape'
+            });
             if (response.type === 'success') {
                 setImages(response.response.results);
                 setHasContent(true)

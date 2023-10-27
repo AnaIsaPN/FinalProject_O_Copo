@@ -1,7 +1,7 @@
 import styles from "./UserProfile.module.css";
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import UnsplashSelector from '../UnsplashSelector/UnsplashSelector';
+import UnsplashSelector from './UnsplashSelector';
 import Router from "next/router";
 
 export function UserProfile() {

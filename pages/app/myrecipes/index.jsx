@@ -1,11 +1,11 @@
-import { NavBar } from "../../components/NavBar/NavBar";
-import { Header } from "../../components/Header/Header";
+import { NavBar } from "../../../components/NavBar";
+import { Header } from "../../../components/Header";
 import styles from "../myrecipes/index.module.css"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
-import { EmptyMyRecipesMessage } from "../../components/EmptyMyRecipesMessage/EmptyMyRecipesMessage";
-import { CardList } from "../../components/CardList/CardList";
-import { AddButton } from "../../components/AddButton/AddButton";
+import { EmptyMyRecipesMessage } from "../../../components/EmptyMyRecipesMessage";
+import { CardList } from "../../../components/CardList";
+import { AddButton } from "../../../components/AddButton";
 
 export default function MyRecipes() {
   const [user, setUser] = useState(null)

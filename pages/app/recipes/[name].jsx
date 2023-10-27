@@ -1,9 +1,9 @@
-import { Header } from "@/pages/components/Header/Header";
-import { HeartFav } from "@/pages/components/HeartFav/HeartFav";
-import { Ingredients } from "@/pages/components/Ingredients/Ingredients";
-import { Instructions } from "@/pages/components/Instructions/Instructions";
-import { RecipeBanner } from "@/pages/components/RecipeBanner/RecipeBanner";
-import { NavBar } from "@/pages/components/NavBar/NavBar";
+import { Header } from "@/components/Header";
+import { HeartFav } from "@/components/HeartFav";
+import { Ingredients } from "@/components/Ingredients";
+import { Instructions } from "@/components/Instructions";
+import { RecipeBanner } from "@/components/RecipeBanner";
+import { NavBar } from "@/components/NavBar";
 import styles from "./[name].module.css"
 import { useState, useEffect } from "react"
 import { useRouter } from "next/router";
@@ -88,7 +88,7 @@ export default function Recipe() {
         <Header title={"Receita"} showBackButton={true} />
       </div>
       <div className={styles.banner}>
-        <RecipeBanner drink={recipe} setUserFavorite={setUserFavorite} isFavorite={isFavorite} isUserRecipe={isUserRecipe}/>
+        <RecipeBanner drink={recipe} setUserFavorite={setUserFavorite} isFavorite={isFavorite} isUserRecipe={isUserRecipe} />
       </div>
       <div className={styles.ingredients}>
         <Ingredients drink={recipe} />

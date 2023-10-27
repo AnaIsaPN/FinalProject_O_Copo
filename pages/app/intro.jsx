@@ -1,5 +1,5 @@
-import { IntroLogo } from "../components/IntroLogo/IntroLogo";
-import Spinner from "../components/Spinner/Spinner";
+import { IntroLogo } from "../../components/IntroLogo";
+import Spinner from "../../components/Spinner";
 import styles from "./intro.module.css";
 
 export function Intro() {

@@ -1,14 +1,14 @@
 
-import { Header } from "../../components/Header/Header";
-import { RecipePhoto } from "../../components/RecipePhoto/RecipePhoto";
-import { RecipeDropSelect } from "../../components/RecipeDropSelect/RecipeDropSelect";
-import { RecipeInput } from "../../components/RecipeInput/RecipeInput";
-import { RecipeAddButton } from "../../components/RecipeAddButton/RecipeAddButton";
+import { Header } from "../../../components/Header";
+import { RecipePhoto } from "../../../components/RecipePhoto";
+import { RecipeDropSelect } from "../../../components/RecipeDropSelect";
+import { RecipeInput } from "../../../components/RecipeInput";
+import { RecipeAddButton } from "../../../components/RecipeAddButton";
 import { useRouter } from "next/router";
-import { NavBar } from "../../components/NavBar/NavBar";
+import { NavBar } from "../../../components/NavBar";
 import { useState } from "react";
-import { RecipeDeleteButton } from "@/pages/components/RecipeDeleteButton/RecipeDeleteButton";
-import { RecipeTypeInputs } from "@/pages/components/RecipeTypeInputs/RecipeTypeInputs";
+import { RecipeDeleteButton } from "@/components/RecipeDeleteButton";
+import { RecipeTypeInputs } from "@/components/RecipeTypeInputs";
 import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 import { useTheme } from "../../../utils/ThemeContext"
@@ -145,7 +145,7 @@ export default function RecipeRegister() {
         editRecipe={editRecipe} />
 
       <div className={styles.recipeForm}>
-        <RecipePhoto setInput={setInputs} editRecipe={editRecipe} input={inputs}/>
+        <RecipePhoto setInput={setInputs} editRecipe={editRecipe} input={inputs} />
       </div>
 
       <RecipeInput

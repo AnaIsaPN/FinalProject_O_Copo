@@ -1,14 +1,14 @@
-import { Header } from "../components/Header/Header";
-import { HomeTitle } from "../components/HomeTitle/HomeTitle";
-import { SearchForm } from "../components/SearchForm/SearchForm";
-import { RandomButton } from "../components/RandomButton/RandomButton";
-import { RecipesTitle } from "../components/RecipesTitle/RecipesTitle";
-import { FilterButton } from "../components/FilterButton/FilterButton";
-import { CardList } from "../components/CardList/CardList";
-import { NavBar } from "../components/NavBar/NavBar";
+import { Header } from "../../components/Header";
+import { HomeTitle } from "../../components/HomeTitle";
+import { SearchForm } from "../../components/SearchForm";
+import { RandomButton } from "../../components/RandomButton";
+import { RecipesTitle } from "../../components/RecipesTitle";
+import { FilterButton } from "../../components/FilterButton";
+import { CardList } from "../../components/CardList";
+import { NavBar } from "../../components/NavBar";
 import styles from "./home.module.css"
 import { useState, useEffect } from "react"
-import { RefreshButton } from "../components/RefreshButton/RefreshButton";
+import { RefreshButton } from "../../components/RefreshButton";
 
 
 
@@ -19,7 +19,7 @@ export default function HomePage() {
   const [randomB, setRandomB] = useState(false)//boolean para o butao random
   const [selectedOption, setSelectedOption] = useState("todas")
   const [user, setUser] = useState()
-  
+
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem('user')) === null ? { name: 'visitante' } : JSON.parse(localStorage.getItem('user')))
   }, [])
@@ -103,7 +103,7 @@ export default function HomePage() {
     const options = { method: 'GET' };
     // Possiveis estados do currentFilter: todas, Alcoólico, Não Alcoólico
     // Possiveis estados do currentSearch: "" ou "conteudo"
-    fetch(`/api/getRecipes/${currentFilter}/${forFetch=== null ? 'visitante' : forFetch._id}/${currentSearch.length ? currentSearch : "vazio"}`, options)
+    fetch(`/api/getRecipes/${currentFilter}/${forFetch === null ? 'visitante' : forFetch._id}/${currentSearch.length ? currentSearch : "vazio"}`, options)
       .then(response => response.json())
       .then(response => setRecipes(response.result))
       .catch(err => console.error(err));

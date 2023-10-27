@@ -1,8 +1,8 @@
 import styles from "./RecipeBanner.module.css"
-import { HeartFav } from "@/pages/components/HeartFav/HeartFav";
+import { HeartFav } from "@/components/HeartFav";
 
 export function RecipeBanner({ drink, setUserFavorite, isFavorite, isUserRecipe }) {
-    
+
 
     return (
 
@@ -19,7 +19,7 @@ export function RecipeBanner({ drink, setUserFavorite, isFavorite, isUserRecipe 
             </div>
             <div className={styles.photo} >
                 <img
-                 className={styles.img}
+                    className={styles.img}
                     alt="drink image"
                     src={drink?.img}
                     height="250px"

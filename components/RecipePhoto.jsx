@@ -1,5 +1,5 @@
 import styles from "./RecipePhoto.module.css";
-import ImageList from '../ImageList/ImageList';
+import ImageList from './ImageList';
 import { useState, useEffect } from "react"
 
 export function RecipePhoto({ setInput, input }) {

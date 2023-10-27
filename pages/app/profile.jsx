@@ -1,6 +1,6 @@
-import { NavBar } from "../components/NavBar/NavBar";
-import { Header } from "../components/Header/Header";
-import { UserProfile } from "../components/UserProfile/UserProfile";
+import { NavBar } from "../../components/NavBar";
+import { Header } from "../../components/Header";
+import { UserProfile } from "../../components/UserProfile";
 import styles from "./profile.module.css"
 
 export default function Profile() {

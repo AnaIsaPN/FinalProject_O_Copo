@@ -1,5 +1,5 @@
-import { SmallCard } from "../SmallCard/SmallCard"
-import { LargeCard } from "../LargeCard/LargeCard"
+import { SmallCard } from "./SmallCard"
+import { LargeCard } from "./LargeCard"
 import styles from "./CardList.module.css"
 
 export function CardList({ size, list, showEditButton, pages }) {
@@ -10,11 +10,11 @@ export function CardList({ size, list, showEditButton, pages }) {
                 if (size === "small") {
                     return <SmallCard drink={drink} key={i} />
                 } else {
-                    return <LargeCard 
-                    drink={drink} key={i}
-                    showEditButton={showEditButton} 
-                    pages={pages}/>
-                    
+                    return <LargeCard
+                        drink={drink} key={i}
+                        showEditButton={showEditButton}
+                        pages={pages} />
+
                 }
             })}
         </div>

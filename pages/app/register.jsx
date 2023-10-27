@@ -1,10 +1,10 @@
 import { useRouter } from "next/navigation";
-import { Header } from "../components/Header/Header";
-import { LoginFormEmail } from "../components/LoginFormEmail/LoginFormEmail";
-import { LoginFormPassword } from "../components/LoginFormPassword/LoginFormPassword";
-import { LoginFormUser } from "../components/LoginFormUser/LoginFormUser";
-import { Logo } from "../components/Logo/Logo";
-import { RegisterButton } from "../components/RegisterButton/RegisterButton";
+import { Header } from "../../components/Header";
+import { LoginFormEmail } from "../../components/LoginFormEmail";
+import { LoginFormPassword } from "../../components/LoginFormPassword";
+import { LoginFormUser } from "../../components/LoginFormUser";
+import { Logo } from "../../components/Logo";
+import { RegisterButton } from "../../components/RegisterButton";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify"
 import { useTheme } from '@/utils/ThemeContext';
@@ -56,7 +56,7 @@ export default function Register() {
         <p>Terá um custo de 12,98€ anual.</p>
       </div>
       <ToastContainer
-      toastClassName={styles.tostifyNotification}
+        toastClassName={styles.tostifyNotification}
         position="top-left"
         autoClose={2000}
         hideProgressBar

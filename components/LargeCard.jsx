@@ -1,10 +1,9 @@
 import { VALID_LOADERS } from "next/dist/shared/lib/image-config";
 import { useRouter } from "next/navigation";
-import icon from "../../../public/assets/icons/icon-x.svg"
+import icon from "../public/assets/icons/icon-x.svg"
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import styles from "./LargeCard.module.css"
 import Link from "next/link";

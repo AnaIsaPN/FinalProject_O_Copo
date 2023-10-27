@@ -1,8 +1,8 @@
 import styles from "./login.module.css"
-import { Logo } from "../components/Logo/Logo"
-import { LoginFormEmail } from "../components/LoginFormEmail/LoginFormEmail"
-import { LoginFormPassword } from "../components/LoginFormPassword/LoginFormPassword"
-import { LoginButtons } from "../components/LoginButtons/LoginButtons"
+import { Logo } from "../../components/Logo"
+import { LoginFormEmail } from "../../components/LoginFormEmail"
+import { LoginFormPassword } from "../../components/LoginFormPassword"
+import { LoginButtons } from "../../components/LoginButtons"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { ToastContainer, toast } from "react-toastify"
@@ -33,7 +33,7 @@ export default function Login() {
       notify()
     }
   }
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.logo}>

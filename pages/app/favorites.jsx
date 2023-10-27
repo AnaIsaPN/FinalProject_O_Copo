@@ -1,9 +1,9 @@
-import { NavBar } from "../components/NavBar/NavBar";
-import { Header } from "../components/Header/Header";
-import { CardList } from "../components/CardList/CardList";
+import { NavBar } from "../../components/NavBar";
+import { Header } from "../../components/Header";
+import { CardList } from "../../components/CardList";
 import styles from "./favorites.module.css"
 import { useState, useEffect } from "react"
-import { EmptyFavoritesMessage } from "../components/EmptyFavoritesMessage/EmptyFavoritesMessage";
+import { EmptyFavoritesMessage } from "../../components/EmptyFavoritesMessage";
 
 export default function Favorites() {
   const [favoriteRecipes, setFavoriteRecipes] = useState([]);
@@ -31,7 +31,7 @@ export default function Favorites() {
       {favoriteRecipes.length ?
         <div className={styles.list}>
           <div className={styles.cards} >
-            <CardList list={favoriteRecipes} size={"large"} pages={"favorites"}/>
+            <CardList list={favoriteRecipes} size={"large"} pages={"favorites"} />
           </div>
         </div>
         :
