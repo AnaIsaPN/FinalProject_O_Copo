@@ -86,7 +86,7 @@ export default function HomePage() {
     // funcao pegar/gerar receita aleatória que provavalemente sera chamada do CardList
     const options = { method: 'GET' }
 
-    fetch(`http://localhost:3000/api/getRandom/${currentFilter}/randomDrink`, options)
+    fetch(`/api/getRandom/${currentFilter}/randomDrink`, options)
       .then(response => response.json())
       .then(response => setRecipes(response.result))
       .catch(err => console.error(err));

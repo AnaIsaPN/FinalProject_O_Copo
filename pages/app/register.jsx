@@ -25,7 +25,7 @@ export default function Register() {
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'insomnia/8.3.0' },
       body: JSON.stringify({ "name": `${inputs.user}`, "email": `${inputs.email}`, "password": `${inputs.password}` })
     };
-    const res = await fetch(`http://localhost:3000/api/signin`, options)
+    const res = await fetch(`/api/signin`, options)
     if (res.status === 200) {
       const body = await res.json()
       localStorage.setItem('user', JSON.stringify(body.result))
