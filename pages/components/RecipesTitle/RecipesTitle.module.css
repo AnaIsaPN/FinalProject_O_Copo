@@ -1,0 +1,7 @@
+.recipestitle {
+    width: 7.6rem;
+    height: 2.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}

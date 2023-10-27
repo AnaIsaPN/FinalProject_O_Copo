@@ -1,0 +1,38 @@
+.FilterButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative; 
+}
+
+.options {
+    width: 15.6rem;
+    height: 11rem;
+    background-color: var(--bg-filter-options);
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 29%; 
+    left: 52%;
+    gap: 1.2rem;
+    z-index: 999;
+}
+
+.option {
+    width: 12.6rem;
+    height: 3.2rem;
+    border-radius: 2.0rem;
+    border: none;
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--sub-title-color);
+}
+
+.selectedOption {
+    background-color: var(--sc-btn-color);
+    color: var(--bg-color);
+}

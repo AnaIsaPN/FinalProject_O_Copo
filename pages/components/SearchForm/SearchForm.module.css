@@ -1,0 +1,16 @@
+.searchform {
+    border: 1px solid;
+    border-color: var(--sub-title-color);
+    border-radius: 2.4rem;
+    height: 3.8rem;
+    width: 28rem;
+    padding: 1.2rem 1.2rem 1.2rem 3.2rem;
+    background-image: url('/assets/icons/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: 1rem 1rem; 
+    background-color: transparent;
+}
+
+.searchform::placeholder{
+    font-size: 1.2rem;
+}

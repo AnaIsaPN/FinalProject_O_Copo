@@ -1,0 +1,9 @@
+.title {
+  color: var(--sub-title-color);
+  font-size: 1.8rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  color:var(--sc-text-color);
+}

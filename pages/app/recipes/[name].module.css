@@ -1,0 +1,30 @@
+.container{
+    margin: 3.4rem 2.6rem 0 2.6rem;
+}
+
+.tostifyNotification{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.banner{
+    margin-top: 4rem;
+}
+
+.ingredients{
+    margin-top: 4rem;
+}
+
+.instructions{
+    margin-top: 4rem;
+    padding-bottom: 12rem;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+}

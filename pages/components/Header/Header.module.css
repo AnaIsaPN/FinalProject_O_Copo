@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 8.4rem;
+}
+
+.backButton, .darkModeButton {
+    background-color: var(--btn-color);
+    background-size: cover;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+    border: none;
+    box-shadow: var(--box-shadow-btn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backButton{
+    position: absolute;
+    top: 3%; 
+    left: 12%;
+}
+
+.darkModeButton {
+    position: absolute;
+    top: 3%; 
+    right: 12%;
+}
+
+.title {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}

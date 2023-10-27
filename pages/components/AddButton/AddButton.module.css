@@ -1,0 +1,23 @@
+.addButton {
+  border: none;
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: var(--sc-btn-color);
+  box-shadow: var(--box-shadow-btn);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addButton:hover {
+  transform: scale(1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.addButton:active {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}

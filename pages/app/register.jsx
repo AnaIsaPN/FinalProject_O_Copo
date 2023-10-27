@@ -1,0 +1,73 @@
+import { useRouter } from "next/navigation";
+import { Header } from "../components/Header/Header";
+import { LoginFormEmail } from "../components/LoginFormEmail/LoginFormEmail";
+import { LoginFormPassword } from "../components/LoginFormPassword/LoginFormPassword";
+import { LoginFormUser } from "../components/LoginFormUser/LoginFormUser";
+import { Logo } from "../components/Logo/Logo";
+import { RegisterButton } from "../components/RegisterButton/RegisterButton";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify"
+import { useTheme } from '@/utils/ThemeContext';
+import styles from "./register.module.css";
+import 'react-toastify/dist/ReactToastify.css'
+
+export default function Register() {
+
+  const notifyUnauthorized = () => toast.error('Este email já se encontra registado')
+  const notifySucess = () => toast.success('Registo criado com sucesso!')
+  const router = useRouter();
+  const { theme, toggleTheme } = useTheme();
+  const [inputs, setInputs] = useState({ user: "", email: "", password: "" });
+
+  async function onSubmit() {
+    const options = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': 'insomnia/8.3.0' },
+      body: JSON.stringify({ "name": `${inputs.user}`, "email": `${inputs.email}`, "password": `${inputs.password}` })
+    };
+    const res = await fetch(`http://localhost:3000/api/signin`, options)
+    if (res.status === 200) {
+      const body = await res.json()
+      localStorage.setItem('user', JSON.stringify(body.result))
+      notifySucess()
+      setTimeout(() =>
+        router.push('home')
+        , 3000)
+    } else if (res.status === 401) {
+      notifyUnauthorized()
+    }
+  }
+
+  return (
+    <div className={styles.container}>
+      <Header title={"Registo"} showBackButton={true} />
+      <div className={styles.logo}>
+        <Logo />
+      </div>
+      <div className={styles.loginInput}>
+        <LoginFormUser setInputs={setInputs} inputs={inputs} />
+        <LoginFormEmail setInputs={setInputs} inputs={inputs} />
+        <LoginFormPassword setInputs={setInputs} inputs={inputs} />
+      </div>
+      <div className={styles.button}>
+        <RegisterButton onSubmit={onSubmit} />
+      </div>
+      <div className={styles.info}>
+        <p>Terá um custo de 12,98€ anual.</p>
+      </div>
+      <ToastContainer
+      toastClassName={styles.tostifyNotification}
+        position="top-left"
+        autoClose={2000}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme={theme}
+      />
+    </div>
+  );
+}

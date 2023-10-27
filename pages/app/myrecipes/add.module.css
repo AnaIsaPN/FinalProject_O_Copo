@@ -1,0 +1,43 @@
+.container {
+  overflow-y: scroll;
+  margin: 3.4rem 2.6rem 0 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 10rem;
+}
+
+.tostifyNotification{
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.buttons {
+  display: flex;
+  gap: 8rem;
+}
+
+.addFormStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.recipeForm {
+margin: 6rem 0 2rem 0;
+}
+
+.inputs {
+  display: flex;
+  gap: 1rem;
+}
+

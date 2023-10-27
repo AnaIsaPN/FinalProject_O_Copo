@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  align-items: end;
+  gap: 6rem
+}
+
+
+.trashBut {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 8rem;
+  height: 3.5rem;
+  color: #E21A1A;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.trashBut img{
+  margin-right: .5rem;
+}

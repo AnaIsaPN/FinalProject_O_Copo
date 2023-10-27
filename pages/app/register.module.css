@@ -1,0 +1,36 @@
+.container {
+  margin: 3.4rem 2.6rem 0 2.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tostifyNotification{
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.logo {
+  margin: 9rem 0 7rem 0;
+  transform: translateX(1rem);
+}
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.button{
+  margin-top: 3rem;
+}
+
+.info {
+  margin-top: 3rem;
+  color: var(--sc-text-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+}

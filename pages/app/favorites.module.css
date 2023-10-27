@@ -1,0 +1,16 @@
+.container{
+    margin: 3.4rem 2.6rem 0 2.6rem;
+}
+
+.cards {
+    margin-top: 6.4rem;
+    padding-bottom: 12rem;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+}

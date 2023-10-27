@@ -1,0 +1,115 @@
+.userProfileBox {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+}
+
+.profilePic {
+  cursor: pointer;
+  min-width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--sub-title-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-btn);
+}
+
+.profilePic img {
+  object-fit: cover;
+}
+
+.profilePicContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.userData {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  align-items: start;
+}
+
+.userBut {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 24rem;
+}
+
+.userSubBut {
+  color: var(--sub-title-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-style: none;
+  background: none;
+}
+
+.userLogoutBut {
+  color: var(--sub-title-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-style: none;
+  background: none;
+}
+
+.visit {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.visit img {
+  width: 40%;
+}
+
+.visit h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--sub-title-color);
+
+}
+
+.visit button {
+  margin-top: 12rem;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  margin-top: .2rem;
+}
+
+.imageList {
+  max-width: 80%;
+  margin: 7.8rem auto;
+  background-color: var(--card-color);
+  padding: 1.2rem 2rem 0;
+  border-radius: 1rem;
+}
+
+.withContent {
+  padding-bottom: 2rem;
+}
+
+.unsplashContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--unsplash-container);
+  z-index: 1000;
+  overflow: scroll;
+}

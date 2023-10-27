@@ -1,0 +1,28 @@
+.inputStyle {
+    width: 28.5rem;
+    height: 3.8rem;
+    border-radius: 2.4rem;
+    border: 0.1rem solid var(--sc-btn-color);
+    padding: 1rem;
+    resize: none;
+    overflow: visible;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+.inputStyle::placeholder {
+    text-align: center;
+    color: var(--sc-text-color);
+}
+
+#myTextArea {
+    user-select: text;
+    -moz-user-select: text;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.inputStyle::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,36 @@
+.containter {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+.decoration {
+    background: var(--sub-title-color);
+    color: black;
+    height: .2rem;
+    width: 4rem;
+    border: none;
+    margin-top: .5rem;
+}
+
+
+.info {
+    align-items: flex-start;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    word-wrap: break-word;
+}

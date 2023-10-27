@@ -1,0 +1,43 @@
+.buttonsW {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.buttonsH {
+    display: flex;
+    gap: 12.4rem;
+}
+
+.butPassw {
+  color: var(--sc-text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-style: none;
+  background: none;
+}
+
+.butEnter {
+  border-style: none;
+  background: none;
+  color: var(--sc-btn-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.butReg {
+  color: var(--sc-btn-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-style: none;
+  background: none;
+}
+
+.butVisit {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-style: none;
+  background: none;
+}

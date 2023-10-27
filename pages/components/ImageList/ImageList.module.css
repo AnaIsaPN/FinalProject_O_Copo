@@ -1,0 +1,12 @@
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+.images img {
+    width: 6rem;
+    border-radius: .8rem;
+}
