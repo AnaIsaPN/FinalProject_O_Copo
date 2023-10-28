@@ -44,7 +44,7 @@ export async function GetRecipesBySearch(type,items, userId){
 
     //filtrar por ingrediente
     const result = word.map(word => filterAlcOrNonAlcDrinks.filter(drink => drink.ingredients.reduce((acc, ingredient) => 
-    ingredient.name.toLowerCase().includes(word) ? acc = drink : acc, 0))).flat()
+    ingredient.name.toLowerCase().includes(word.toLowerCase()) ? acc = drink : acc, 0))).flat()
         return result
 }
 
