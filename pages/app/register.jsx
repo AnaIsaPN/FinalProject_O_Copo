@@ -33,7 +33,7 @@ export default function Register() {
       setTimeout(() =>
         router.push('home')
         , 3000)
-    } else if (res.status === 401) {
+    } else {
       notifyUnauthorized()
     }
   }
