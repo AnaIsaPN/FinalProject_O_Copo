@@ -25,9 +25,6 @@ export default function Favorites() {
       <div className={styles.header}>
         <Header title={"Lista de favoritos"} showBackButton={true} />
       </div>
-      <div className={styles.footer}>
-        <NavBar />
-      </div>
       {favoriteRecipes.length ?
         <div className={styles.list}>
           <div className={styles.cards} >
@@ -46,6 +43,9 @@ export default function Favorites() {
             </div>}
         </div>
       }
+      <div className={styles.footer}>
+        <NavBar />
+      </div>
     </div>
   );
 }
