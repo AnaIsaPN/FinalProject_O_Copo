@@ -27,7 +27,7 @@ export default function Login() {
       const body = await res.json()
       localStorage.setItem('user', JSON.stringify(body.result))
       router.push('/')
-    } else if (res.status === 401) {
+    } else {
       notify()
     }
   }
