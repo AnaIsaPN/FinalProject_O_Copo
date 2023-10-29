@@ -12,7 +12,6 @@ export function RecipeTypeInputs({ title, handleChangeIngredient, field, value }
         value={value.alcoholPercentage}
         onChange={(e) => handleChangeIngredient(e.target.value, field)}
       >
-
       </input>
 
       <select
@@ -24,7 +23,5 @@ export function RecipeTypeInputs({ title, handleChangeIngredient, field, value }
         <option value="Não Alcoólico">Não Alcoólico</option>
       </select>
     </div>
-
   )
-
 }

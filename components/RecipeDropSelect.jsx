@@ -8,28 +8,17 @@ export function RecipeDropSelect({
   addIngredients,
   removeIngredients,
 }) {
-  const [isButtonClicked, setButtonClicked] = useState(false);
-  const [isDeleteButtonClicked, setDeleteButtonClicked] = useState(false);
 
   const addIngredient = () => {
-    setButtonClicked(true);
     addIngredients({ quant: "", unity: "ml", name: "" });
-    setTimeout(() => {
-      setButtonClicked(false);
-    }, 200);
   };
-
 
   const removeIngredient = (index) => {
     if (index === 0) {
       return;
     } else {
       removeIngredients(index);
-      setDeleteButtonClicked(true);
     }
-    setTimeout(() => {
-      setDeleteButtonClicked(false);
-    }, 200);
   };
 
   const handleIngredientChange = (index, field, value) => {
@@ -64,9 +53,9 @@ export function RecipeDropSelect({
           </select>
 
           <input
+          className={`${styles.inputBig} ${(inputs.hasError && inputs.ingredients[index].name == "") ? styles.inputError : ""}`}
             type="text"
             placeholder="Ingrediente"
-            className={styles.inputBig}
             value={inputs.ingredients[index].name}
             onChange={(e) =>
               handleIngredientChange(index, "name", e.target.value)

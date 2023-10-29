@@ -1,19 +1,15 @@
 import styles from "./RecipePhoto.module.css";
 import ImageList from './ImageList';
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 export function RecipePhoto({ setInput, input }) {
-  const [selectedImage, setSelectedImage] = useState(null);
   const [isSelectorVisible, setSelectorVisible] = useState(false);
   const [hasContent, setHasContent] = useState(false);
 
   const handleImageSelect = (imageUrl) => {
-    console.log(imageUrl)
     setInput(prev => ({ ...prev, img: imageUrl.src }))
-    setSelectedImage(imageUrl)
     hideSelector()
   };
-
 
   const showSelector = () => {
     setSelectorVisible(true);

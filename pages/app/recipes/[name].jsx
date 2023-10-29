@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify"
 import { useTheme } from '@/utils/ThemeContext';
 import 'react-toastify/dist/ReactToastify.css'
+import Loading from "@/components/Loading";
 
 export default function Recipe() {
   const [recipe, setRecipe] = useState(null);
@@ -17,13 +18,12 @@ export default function Recipe() {
   const [isLoading, setIsLoading] = useState(true)
   const [isUserRecipe, setIsUserRecipe] = useState(false)
   const router = useRouter();
-  const { theme, toggleTheme } = useTheme()
+  const { theme } = useTheme()
   const notify = () => toast.error('Tens de fazer login para adicionar receitas aos favoritos!')
   const recipeName = router.query.name;
 
   useEffect(() => {
     fetchRecipe()
-    setIsLoading(false)
   }, [router])
 
   const checkFav = () => {
@@ -43,6 +43,11 @@ export default function Recipe() {
           setIsFavorite(found ? true : false)
         }
         setRecipe(response.result[0])
+      })
+      .finally(() => {
+        setTimeout(() =>
+          setIsLoading(false)
+          , 600)
       })
       .catch(err => console.error(err));
 
@@ -83,35 +88,41 @@ export default function Recipe() {
   }
 
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <Header title={"Receita"} showBackButton={true} />
-      </div>
-      <div className={styles.banner}>
-        <RecipeBanner drink={recipe} setUserFavorite={setUserFavorite} isFavorite={isFavorite} isUserRecipe={isUserRecipe} />
-      </div>
-      <div className={styles.ingredients}>
-        <Ingredients drink={recipe} />
-      </div>
-      <div className={styles.instructions}>
-        <Instructions drink={recipe} />
-      </div>
-      <div className={styles.footer}>
-        <NavBar />
-      </div>
-      <ToastContainer
-        toastClassName={styles.tostifyNotification}
-        position="top-left"
-        autoClose={2000}
-        hideProgressBar
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme={theme}
-      />
+    <div className={`${styles.container} ${isLoading ? styles.isLoading : ""}`}>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <div className={styles.header}>
+            <Header title={"Receita"} showBackButton={true} />
+          </div>
+          <div className={styles.banner}>
+            <RecipeBanner drink={recipe} setUserFavorite={setUserFavorite} isFavorite={isFavorite} isUserRecipe={isUserRecipe} />
+          </div>
+          <div className={styles.ingredients}>
+            <Ingredients drink={recipe} />
+          </div>
+          <div className={styles.instructions}>
+            <Instructions drink={recipe} />
+          </div>
+          <div className={styles.footer}>
+            <NavBar />
+          </div>
+          <ToastContainer
+            toastClassName={styles.tostifyNotification}
+            position="top-left"
+            autoClose={2000}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme={theme}
+          />
+        </>
+      )}
     </div>
   );
 }

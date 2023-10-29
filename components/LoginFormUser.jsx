@@ -1,6 +1,6 @@
 import styles from "./LoginFormUser.module.css";
 
-export function LoginFormUser({setInputs, inputs}) {
+export function LoginFormUser({setInputs, inputs, errAnime}) {
 
   function getUser(val){
     setInputs(pInp => ({...pInp, user: `${val}`}))
@@ -11,7 +11,7 @@ export function LoginFormUser({setInputs, inputs}) {
       <img src="/assets/icons/icon-userLogin.svg" />
 
       <input
-        className={styles.loginFormUser}
+        className={errAnime && inputs.user === "" ? styles.inputError : styles.loginFormUser}
         type="text"
         placeholder="nome"
         value={inputs.user}

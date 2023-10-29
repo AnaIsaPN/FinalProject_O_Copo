@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: stretch;
   text-align: center;
+  height: 600px;
 }
 
 .profilePic {
@@ -42,7 +43,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 24rem;
+  height: 200px;
+  justify-content: flex-end;
 }
 
 .userSubBut {
@@ -61,13 +63,23 @@
   background: none;
 }
 
+.visitLoginButton{
+  color: var(--sub-title-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border-style: none;
+  background: none;
+  height: 200px;
+  justify-content: flex-start;
+}
+
 .visit {
-  margin-top: 8rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
+  height: 600px;
 }
 
 .visit img {
@@ -79,10 +91,6 @@
   text-align: center;
   color: var(--sub-title-color);
 
-}
-
-.visit button {
-  margin-top: 12rem;
 }
 
 .closeButton {

@@ -11,12 +11,10 @@ import 'react-toastify/dist/ReactToastify.css'
 
 export default function Login() {
   const [inputs, setInputs] = useState({ email: '', password: '' })
-
   const router = useRouter()
   const notify = () => toast.error('Dados inválidos');
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
-  //Quando clicado no botao de entrar faz o fetch a base de dados  
   async function getLogin() {
     const options = {
       method: 'POST',
@@ -25,11 +23,11 @@ export default function Login() {
     };
 
     const res = await fetch(`/api/login`, options)
-    if (res.status === 200) {//se o resultado for ok executa o codigo abaixo
+    if (res.status === 200) {
       const body = await res.json()
-      localStorage.setItem('user', JSON.stringify(body.result))//guarda o valor do user no backend no localstorage
-      router.push('/')//redireciona para a pag home 
-    } else if (res.status === 401) {//se o acesso for negado por dados invalidos envia uma notificacao
+      localStorage.setItem('user', JSON.stringify(body.result))
+      router.push('/')
+    } else if (res.status === 401) {
       notify()
     }
   }

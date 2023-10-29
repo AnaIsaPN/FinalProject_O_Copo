@@ -1,4 +1,3 @@
-
 import { Header } from "../../../components/Header";
 import { RecipePhoto } from "../../../components/RecipePhoto";
 import { RecipeDropSelect } from "../../../components/RecipeDropSelect";
@@ -7,21 +6,22 @@ import { RecipeAddButton } from "../../../components/RecipeAddButton";
 import { useRouter } from "next/router";
 import { NavBar } from "../../../components/NavBar";
 import { useState } from "react";
-import { RecipeDeleteButton } from "@/components/RecipeDeleteButton";
 import { RecipeTypeInputs } from "@/components/RecipeTypeInputs";
 import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
 import { useTheme } from "../../../utils/ThemeContext"
 import styles from "./add.module.css";
 
-
 export default function RecipeRegister() {
-  const { theme, toggleTheme } = useTheme()
+  const { theme } = useTheme()
   const notifyEdit = () => toast.success('Receita editada com sucesso!')
   const notifyCreate = () => toast.success('Receita criada com sucesso!')
+  const notifyError = () => toast.error('Preencha todos os campos obrigatórios para criar a receita.')
 
   const router = useRouter();
   const editRecipe = router.query.obj && JSON.parse(router.query.obj)
+
+  const [hasError, setHasError] = useState(false);
 
   const [inputs, setInputs] = useState({
     img: editRecipe ? editRecipe.img : "",
@@ -31,10 +31,18 @@ export default function RecipeRegister() {
     alcoholPercentage: editRecipe ? editRecipe.alcoholPercentage : "",
     instructions: editRecipe ? editRecipe.instructions : "",
     description: editRecipe ? editRecipe.description : "",
+    hasError: hasError
   });
 
   async function onSubmit() {
     const userId = JSON.parse(localStorage.getItem("user"));
+
+    if (hasErrorInRecipe()) {
+      notifyError()
+      setHasError(true)
+      handleChangeIngredient(true, "hasError")
+      return
+    }
 
     if (editRecipe) {
       const options = {
@@ -48,7 +56,7 @@ export default function RecipeRegister() {
             _id: `${editRecipe._id}`,
             img: `${inputs.img}`,
             name: `${inputs.name}`,
-            ingredients: inputs.ingredients,
+            ingredients: mapIngredients(inputs.ingredients),
             instructions: `${inputs.instructions}`,
             type: `${inputs.type}`,
             alcoholPercentage: `${inputs.alcoholPercentage === "" ? "Não informado" : inputs.alcoholPercentage}`,
@@ -56,6 +64,7 @@ export default function RecipeRegister() {
           },
         }),
       };
+
       fetch('/api/userRecipe/modify/recipe', options)
         .then(response => response.json())
         .then(response => console.log(response))
@@ -63,7 +72,7 @@ export default function RecipeRegister() {
       notifyEdit()
       setTimeout(() => {
         router.push('/app/myrecipes')
-      }, 2500)
+      }, 1500)
     } else {
       const options = {
         method: "PATCH",
@@ -75,7 +84,7 @@ export default function RecipeRegister() {
           recipe: {
             img: `${inputs.img}`,
             name: `${inputs.name}`,
-            ingredients: inputs.ingredients,
+            ingredients: mapIngredients(inputs.ingredients),
             instructions: `${inputs.instructions}`,
             type: `${inputs.type}`,
             alcoholPercentage: `${inputs.alcoholPercentage === "" ? "Não informado" : inputs.alcoholPercentage}`,
@@ -86,13 +95,16 @@ export default function RecipeRegister() {
 
       fetch("/api/userRecipe/add/recipe", options)
         .then((response) => response.json())
-        .then((response) => console.log(response))
+        .then(() => notifyCreate())
         .catch((err) => console.error(err));
-      notifyCreate()
       setTimeout(() => {
         router.push('/app/myrecipes')
-      }, 2500)
+      }, 1500)
     }
+  }
+
+  const hasErrorInRecipe = () => {
+    return !inputs.name || !inputs.ingredients || !inputs.instructions || inputs.ingredients.find(ingredient => ingredient.name === "")
   }
 
   const changeIngredient = (index, field, value) => {
@@ -137,6 +149,16 @@ export default function RecipeRegister() {
     });
   };
 
+  const mapIngredients = (ingredients) => {
+    return ingredients.map((ingredient) => {
+      return {
+        name: ingredient.name,
+        quant: ingredient.quant == "" ? null : ingredient.quant,
+        unity: ingredient.quant == "" ? null : ingredient.unity,
+      }
+    })
+  }
+
   return (
     <div className={styles.container}>
       <Header
@@ -151,11 +173,10 @@ export default function RecipeRegister() {
       <RecipeInput
         title="Nome da Receita"
         grows={false}
-        inputValue={inputs.name}
+        inputValue={inputs}
         field={"name"}
         handleChangeIngredient={handleChangeIngredient}
       />
-
 
       <div >
         <RecipeTypeInputs
@@ -184,7 +205,7 @@ export default function RecipeRegister() {
       <RecipeInput
         title="Instruções"
         grows={true}
-        inputValue={inputs.instructions}
+        inputValue={inputs}
         field={"instructions"}
         handleChangeIngredient={handleChangeIngredient}
       />
@@ -192,7 +213,7 @@ export default function RecipeRegister() {
       <RecipeInput
         title="Descrição"
         grows={true}
-        inputValue={inputs.description}
+        inputValue={inputs}
         field={"description"}
         handleChangeIngredient={handleChangeIngredient}
       />

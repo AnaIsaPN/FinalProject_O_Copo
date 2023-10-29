@@ -1,33 +1,42 @@
-.introStyle {
-height: 100vh;
+.container {
+  position: absolute;
+  top: 280px;
+  left: 140px;
 }
-
-
 
 .logoPolygon {
   width: 100px;
   height: 100px;
-  margin: 7rem 3rem 1rem 14rem;
   animation-name: scaleUpAndDownPolygon;
   animation-duration: 8s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
-.logoCopo {
-  margin: -15rem 0rem 0px -134px;
- 
+.logoContainer {
+  position: relative;
+}
+
+.logoContainer img {
+  position: absolute;
+  top: 12px;
+  left: 4px;
+}
+
+.logoContainer svg {
+  position: absolute;
+  left: 0;
 }
 
 @keyframes scaleUpAndDownPolygon {
   0% {
     transform: scale(0.8) translate(0vh, -5vh);
- 
+
   }
 
   50% {
     transform: scale(0) translate(0vh, -5vh);
-    
+
   }
 
   100% {
@@ -35,16 +44,3 @@ height: 100vh;
   }
 
 }
-
-/* @keyframes scaleUpAndDownCopo {
-  0% {
-    transform: scale(1) translate(0px, 0px);
-  }
-  50% {
-    transform: scale(0.6) translate(5px, 20px);
-  }
-  100% {
-    transform: scale(1) translate(0px, 0px);
-  }
-} */
-

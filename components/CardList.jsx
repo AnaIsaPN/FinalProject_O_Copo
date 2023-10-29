@@ -2,7 +2,7 @@ import { SmallCard } from "./SmallCard"
 import { LargeCard } from "./LargeCard"
 import styles from "./CardList.module.css"
 
-export function CardList({ size, list, showEditButton, pages }) {
+export function CardList({ size, list, showEditButton, onRemoveRecipe }) {
     const containerStyle = size === "small" ? styles.cardsGrid : styles.cardsFlex;
     return (
         <div className={containerStyle}>
@@ -13,8 +13,7 @@ export function CardList({ size, list, showEditButton, pages }) {
                     return <LargeCard
                         drink={drink} key={i}
                         showEditButton={showEditButton}
-                        pages={pages} />
-
+                        onRemoveRecipe={onRemoveRecipe} />
                 }
             })}
         </div>

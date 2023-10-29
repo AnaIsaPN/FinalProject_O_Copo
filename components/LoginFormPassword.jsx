@@ -1,6 +1,6 @@
 import styles from "./LoginFormPassword.module.css";
 
-export function LoginFormPassword({setInputs, inputs}) {
+export function LoginFormPassword({setInputs, inputs, errAnime}) {
     function getPassword(val){
       setInputs(pInp => ({...pInp, password: `${val}`}))
     }
@@ -10,7 +10,7 @@ export function LoginFormPassword({setInputs, inputs}) {
         <img src="/assets/icons/icon-password.svg" />
   
         <input
-          className={styles.loginFormPass}
+          className={errAnime && inputs.password === "" ? styles.inputError : styles.loginFormPass}
           type="password"
           placeholder="password"
           value={inputs.password}

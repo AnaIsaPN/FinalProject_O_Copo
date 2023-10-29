@@ -1,9 +1,24 @@
 import styles from "./FilterButton.module.css"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 export function FilterButton({ selectedOption, setCurrentFilter, setSelectedOption }) {
     const [isOptionsVisible, setOptionsVisible] = useState(false);
+    const optionsRef = useRef(null);
 
+    useEffect(() => {
+        const handleDocumentClick = (event) => {
+            if (isOptionsVisible && optionsRef.current && !optionsRef.current.contains(event.target)) {
+                setOptionsVisible(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleDocumentClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleDocumentClick);
+        };
+    }, [isOptionsVisible]);
+    
     const handleClick = () => {
         if (isOptionsVisible) {
             setOptionsVisible(false);
@@ -13,7 +28,6 @@ export function FilterButton({ selectedOption, setCurrentFilter, setSelectedOpti
     };
 
     const handleOptionClick = (option) => {
-
         if (selectedOption === option) {
             setSelectedOption("todas");
             setCurrentFilter("todas")
@@ -33,7 +47,7 @@ export function FilterButton({ selectedOption, setCurrentFilter, setSelectedOpti
             </button>
 
             {isOptionsVisible && (
-                <div className={styles.options}>
+                <div ref={optionsRef} className={styles.options}>
                     <button
                         className={`${styles.option} ${selectedOption === "Alcoólico" ? styles.selectedOption : ""}`}
                         onClick={() => handleOptionClick("Alcoólico")}

@@ -18,14 +18,28 @@ export default function Register() {
   const router = useRouter();
   const { theme, toggleTheme } = useTheme();
   const [inputs, setInputs] = useState({ user: "", email: "", password: "" });
+  const [errAnime, setErrAnime] = useState(false)
 
   async function onSubmit() {
+    if (inputs.user === "") {
+      setErrAnime(true)
+      return toast.error('Campo de nome inválido')
+    }
+    if (inputs.email === "" || !inputs.email.includes('@')) {
+      setErrAnime(true)
+      return toast.error('Campo de email inválido')
+    }
+    if (inputs.password === "") {
+      setErrAnime(true)
+      return toast.error('Campo password inválido')
+    }
+
     const options = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'User-Agent': 'insomnia/8.3.0' },
       body: JSON.stringify({ "name": `${inputs.user}`, "email": `${inputs.email}`, "password": `${inputs.password}` })
     };
-    const res = await fetch(`/api/signin`, options)
+    const res = await fetch(`http://localhost:3000/api/signin`, options)
     if (res.status === 200) {
       const body = await res.json()
       localStorage.setItem('user', JSON.stringify(body.result))
@@ -33,7 +47,7 @@ export default function Register() {
       setTimeout(() =>
         router.push('home')
         , 3000)
-    } else {
+    } else if (res.status === 401) {
       notifyUnauthorized()
     }
   }
@@ -45,9 +59,9 @@ export default function Register() {
         <Logo />
       </div>
       <div className={styles.loginInput}>
-        <LoginFormUser setInputs={setInputs} inputs={inputs} />
-        <LoginFormEmail setInputs={setInputs} inputs={inputs} />
-        <LoginFormPassword setInputs={setInputs} inputs={inputs} />
+        <LoginFormUser setInputs={setInputs} inputs={inputs} errAnime={errAnime} />
+        <LoginFormEmail setInputs={setInputs} inputs={inputs} errAnime={errAnime} />
+        <LoginFormPassword setInputs={setInputs} inputs={inputs} errAnime={errAnime} />
       </div>
       <div className={styles.button}>
         <RegisterButton onSubmit={onSubmit} />

@@ -1,6 +1,6 @@
 import styles from "./LoginFormEmail.module.css";
 
-export function LoginFormEmail({inputs, setInputs}) {
+export function LoginFormEmail({inputs, setInputs, errAnime}) {
   function getEmail(val){
     setInputs(pInput => ({...pInput, email: `${val}`}))
   }
@@ -10,7 +10,7 @@ export function LoginFormEmail({inputs, setInputs}) {
         <img src="/assets/icons/icon-email.svg" />
   
         <input
-          className={styles.loginFormEmail}
+          className={errAnime && inputs.email === "" ? styles.inputError : styles.loginFormEmail}
           type="email"
           placeholder="@email"
           value={inputs.email}

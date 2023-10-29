@@ -34,20 +34,22 @@ export async function GetRecipesBySearch(type,items, userId){
     const resultByName = filterAlcOrNonAlcDrinks.filter(drink => 
         drink.name.toLowerCase() === word.join(' ').toLowerCase() && drink)
     if(resultByName.length > 0) return resultByName
-    
-    //Filtra caso seja enviado só o primeiro nome e dá os vários tipos de bebidas ou um nome que esteja na bebida
-    const resultByFirstName = filterAlcOrNonAlcDrinks.filter(drink => 
-        drink.name.toLowerCase().includes(word.join(' ').toLowerCase()) && drink
-        )
-    if(resultByFirstName.length > 0) return resultByFirstName
 
 
     //filtrar por ingrediente
     const result = word.map(word => filterAlcOrNonAlcDrinks.filter(drink => drink.ingredients.reduce((acc, ingredient) => 
     ingredient.name.toLowerCase().includes(word.toLowerCase()) ? acc = drink : acc, 0))).flat()
-        return result
-}
 
+    console.log("result", result);
+
+    if (result.length > 0) return result
+    
+    //Filtra caso seja enviado só o primeiro nome e dá os vários tipos de bebidas ou um nome que esteja na bebida
+    const resultByFirstName = filterAlcOrNonAlcDrinks.filter(drink => 
+        drink.name.toLowerCase().includes(word.join(' ').toLowerCase()) && drink
+        )
+    return resultByFirstName
+}
 
 
 // console.log(GetRecipesBySearch('Alcool', 'laranja, banana'))

@@ -81,7 +81,7 @@ export function UserProfile() {
     <div className={styles.userProfileBox}>
 
       {user ?
-        <div>
+        <div className={styles.profileContainer}>
           {isSelectorVisible && (
             <div className={styles.unsplashContainer}>
               <div className={hasContent ? `${styles.imageList} ${styles.withContent}` : styles.imageList}>
@@ -130,7 +130,7 @@ export function UserProfile() {
           <img src="/assets/icons/icon-user-block.svg" />
           <h2>Está a navegar como visitante. Subscreva-se ou faça login para ter acesso às suas informações.</h2>
           <button
-            className={styles.userLogoutBut}
+            className={styles.visitLoginButton}
             onClick={() => router.push('/app/login')}
           >
             Login

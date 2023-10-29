@@ -3,10 +3,26 @@
     "img": "/assets/images/Margarita.png",
     "name": "Margarita",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "tequila" },
-      { "quant": 30, "unity": "ml", "name": "licor de laranja" },
-      { "quant": 20, "unity": "ml", "name": "sumo de limão" },
-      { "quant": null, "unity": null, "name": "Sal para a borda do copo" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "tequila"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "licor de laranja"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Sal para a borda do copo"
+      }
     ],
     "instructions": "Molhe a borda de um copo com sumo de limão e mergulhe em sal. Num shaker, misture a tequila, o licor de laranja e o sumo de limão com gelo. Agite bem e coe no copo preparado.",
     "type": "Alcoólico",
@@ -17,10 +33,26 @@
     "img": "/assets/images/Caipirinha.png",
     "name": "Caipirinha",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "cachaça" },
-      { "quant": 2, "unity": null, "name": "limões cortado em cubos" },
-      { "quant": 2, "unity": null, "name": "colheres de cha de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "cachaça"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "limões cortado em cubos"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "colheres de cha de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo, adicione o açúcar e os cubos de limão. Macere bem para extrair o sumo e aroma. Adicione a cachaça e gelo. Mexa e sirva.",
     "type": "Alcoólico",
@@ -31,21 +63,61 @@
     "img": "/assets/images/Sangria.png",
     "name": "Sangria",
     "ingredients": [
-      { "quant": 750, "unity": "ml", "name": "vinho tinto" },
-      { "quant": 250, "unity": "ml", "name": "licor de laranja" },
-      { "quant": 250, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 1, "unity": null, "name": "limão espremido" },
-      { "quant": 1, "unity": null, "name": "limão em rodelas" },
-      { "quant": 1, "unity": null, "name": "laranja em rodelas" },
-      { "quant": 1, "unity": null, "name": "maçã em cubos" },
-      { "quant": 2, "unity": null, "name": "canelas em pau" },
-      { "quant": 6, "unity": null, "name": "cravos-da-índia" },
+      {
+        "quant": 750,
+        "unity": "ml",
+        "name": "vinho tinto"
+      },
+      {
+        "quant": 250,
+        "unity": "ml",
+        "name": "licor de laranja"
+      },
+      {
+        "quant": 250,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "limão espremido"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "limão em rodelas"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "laranja em rodelas"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "maçã em cubos"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "canelas em pau"
+      },
+      {
+        "quant": 6,
+        "unity": null,
+        "name": "cravos-da-índia"
+      },
       {
         "quant": null,
         "unity": null,
         "name": "Refrigerante de limão ou água com gás"
       },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Misture o vinho tinto, o licor de laranja, o sumo de laranja e o sumo de limão numa jarra. Adicione as frutas e as especiarias. Deixe repousar no frigorífico por pelo menos 2 horas. Adicione refrigerante de limão ou água com gás e gelo antes de servir.",
     "type": "Alcoólico",
@@ -56,8 +128,16 @@
     "img": "/assets/images/DryMartini.png",
     "name": "Martini Seco",
     "ingredients": [
-      { "quant": 60, "unity": "ml", "name": "gin" },
-      { "quant": 10, "unity": "ml", "name": "vermute seco" },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "gin"
+      },
+      {
+        "quant": 10,
+        "unity": "ml",
+        "name": "vermute seco"
+      },
       {
         "quant": null,
         "unity": null,
@@ -73,13 +153,41 @@
     "img": "/assets/images/MaiTai.png",
     "name": "Mai Tai",
     "ingredients": [
-      { "quant": 40, "unity": "ml", "name": "rum branco" },
-      { "quant": 20, "unity": "ml", "name": "rum escuro" },
-      { "quant": 15, "unity": "ml", "name": "licor de laranja" },
-      { "quant": 10, "unity": "ml", "name": "xarope de orgeat" },
-      { "quant": 20, "unity": "ml", "name": "sumo de limão" },
-      { "quant": null, "unity": null, "name": "Hortelã para decorar" },
-      { "quant": null, "unity": null, "name": "Cereja para decorar" }
+      {
+        "quant": 40,
+        "unity": "ml",
+        "name": "rum branco"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "rum escuro"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "licor de laranja"
+      },
+      {
+        "quant": 10,
+        "unity": "ml",
+        "name": "xarope de orgeat"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Hortelã para decorar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Cereja para decorar"
+      }
     ],
     "instructions": "Num shaker, misture os dois runs, o licor de laranja, o xarope de orgeat e o sumo de limão com gelo. Agite bem e coe num copo alto com gelo moído. Decore com hortelã e uma cereja.",
     "type": "Alcoólico",
@@ -90,8 +198,16 @@
     "img": "/assets/images/GinTonic.png",
     "name": "Gin Tónico",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "gin" },
-      { "quant": 150, "unity": "ml", "name": "água tónica" },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "gin"
+      },
+      {
+        "quant": 150,
+        "unity": "ml",
+        "name": "água tónica"
+      },
       {
         "quant": 1,
         "unity": null,
@@ -107,11 +223,31 @@
     "img": "/assets/images/MocktailMorango.png",
     "name": "Mocktail de Morango",
     "ingredients": [
-      { "quant": 150, "unity": "g", "name": "morangos frescos" },
-      { "quant": 100, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 50, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Morango para decorar" }
+      {
+        "quant": 150,
+        "unity": "g",
+        "name": "morangos frescos"
+      },
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Morango para decorar"
+      }
     ],
     "instructions": "Num liquidificador, misture os morangos, o sumo de laranja, o sumo de limão e o xarope de açúcar com gelo. Triture até obter uma mistura suave. Sirva num copo alto e decore com um morango na borda.",
     "type": "Não Alcoólico",
@@ -122,10 +258,26 @@
     "img": "/assets/images/PinaColada.png",
     "name": "Piña Colada",
     "ingredients": [
-      { "quant": 60, "unity": "ml", "name": "rum branco" },
-      { "quant": 90, "unity": "ml", "name": "sumo de abacaxi" },
-      { "quant": 30, "unity": "ml", "name": "leite de coco" },
-      { "quant": 30, "unity": "ml", "name": "xarope de açúcar" },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "rum branco"
+      },
+      {
+        "quant": 90,
+        "unity": "ml",
+        "name": "sumo de abacaxi"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "leite de coco"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
       {
         "quant": null,
         "unity": null,
@@ -141,9 +293,21 @@
     "img": "/assets/images/MocktailMenta.png",
     "name": "Mocktail de Menta",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 60, "unity": "ml", "name": "xarope de menta" },
-      { "quant": null, "unity": null, "name": "Folha de menta para decorar" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "xarope de menta"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Folha de menta para decorar"
+      }
     ],
     "instructions": "Num copo alto com gelo, adicione o sumo de limão e o xarope de menta. Mexa suavemente. Decore com uma folha de menta.",
     "type": "Não Alcoólico",
@@ -159,10 +323,26 @@
         "unity": "g",
         "name": "frutos vermelhos (morangos, framboesas, mirtilos)"
       },
-      { "quant": 100, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 50, "unity": "ml", "name": "água com gás" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Limão em rodela para decorar" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Limão em rodela para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture os frutos vermelhos, o sumo de laranja, a água com gás e o xarope de açúcar com gelo. Mexa suavemente. Decore com uma rodela de limão.",
     "type": "Não Alcoólico",
@@ -173,9 +353,21 @@
     "img": "/assets/images/MocktailTropical.png",
     "name": "Mocktail Tropical",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de abacaxi" },
-      { "quant": 50, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 50, "unity": "ml", "name": "sumo de maracujá" },
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de abacaxi"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de maracujá"
+      },
       {
         "quant": null,
         "unity": null,
@@ -191,11 +383,31 @@
     "img": "/assets/images/CocktailMorango.png",
     "name": "Cocktail de Morango",
     "ingredients": [
-      { "quant": 100, "unity": "g", "name": "morangos frescos" },
-      { "quant": 60, "unity": "ml", "name": "rum branco" },
-      { "quant": 20, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 10, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "g",
+        "name": "morangos frescos"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "rum branco"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 10,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num liquidificador, misture os morangos, o rum, o sumo de limão e o xarope de açúcar com gelo. Triture até obter uma mistura suave. Sirva num copo alto com gelo e decore com um morango na borda.",
     "type": "Alcoólico",
@@ -206,10 +418,26 @@
     "img": "/assets/images/BabyBelle.png",
     "name": "Baby Belle",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de ananás" },
-      { "quant": 50, "unity": "ml", "name": "sumo de maçã" },
-      { "quant": 20, "unity": "ml", "name": "xarope de groselha" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de ananás"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de maçã"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de groselha"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de ananás, o sumo de maçã e o xarope de groselha. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
@@ -220,10 +448,26 @@
     "img": "/assets/images/SophisticatedLady.png",
     "name": "Dama Sofisticada",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 50, "unity": "ml", "name": "água com gás" },
-      { "quant": 20, "unity": "ml", "name": "xarope de romã" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de romã"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de laranja, a água com gás e o xarope de romã. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
@@ -234,10 +478,26 @@
     "img": "/assets/images/VirginWatermelonMargarita.png",
     "name": "Margarita de Melancia sem Álcool",
     "ingredients": [
-      { "quant": 150, "unity": "g", "name": "melancia fresca" },
-      { "quant": 50, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Sal para a borda do copo" },
+      {
+        "quant": 150,
+        "unity": "g",
+        "name": "melancia fresca"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Sal para a borda do copo"
+      },
       {
         "quant": 1,
         "unity": null,
@@ -253,9 +513,21 @@
     "img": "/assets/images/Mimosa.png",
     "name": "Mimosa",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 100, "unity": "ml", "name": "champagne" },
-      { "quant": null, "unity": null, "name": "Laranja para decorar" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "champagne"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Laranja para decorar"
+      }
     ],
     "instructions": "Ponha o sumo de laranja dentro do copo, adicione o champagne e mexa. Sirva num copo alto e decore com uma fatia de laranja.",
     "type": "Alcoólico",
@@ -266,10 +538,26 @@
     "img": "/assets/images/MangoMash.png",
     "name": "Mango Mash",
     "ingredients": [
-      { "quant": 100, "unity": "g", "name": "manga fresca" },
-      { "quant": 50, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "g",
+        "name": "manga fresca"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num liquidificador, misture a manga, o sumo de laranja e o xarope de açúcar com gelo. Triture até obter uma mistura suave. Sirva num copo alto e decore com uma fatia de manga.",
     "type": "Não Alcoólico",
@@ -280,10 +568,26 @@
     "img": "/assets/images/VirginBellini.png",
     "name": "Bellini sem Álcool",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de pêssego" },
-      { "quant": 50, "unity": "ml", "name": "sumo de ananás" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de pêssego"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de ananás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de pêssego, o sumo de ananás e o xarope de açúcar. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
@@ -294,10 +598,26 @@
     "img": "/assets/images/LimeCooler.png",
     "name": "Refrescante de Lima",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de lima" },
-      { "quant": 50, "unity": "ml", "name": "água com gás" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de lima"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de lima, a água com gás e o xarope de açúcar. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
@@ -308,10 +628,26 @@
     "img": "/assets/images/VIPLimeMocktail.png",
     "name": "Mocktail VIP de Lima",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de lima" },
-      { "quant": 50, "unity": "ml", "name": "água com gás" },
-      { "quant": 20, "unity": "ml", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de lima"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de lima, a água com gás e o xarope de açúcar. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
@@ -322,29 +658,111 @@
     "img": "/assets/images/DesignatedAppletini.png",
     "name": "Appletini Sem Álcool",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de maçã" },
-      { "quant": 50, "unity": "ml", "name": "sumo de ananás" },
-      { "quant": 20, "unity": "g", "name": "xarope de açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de maçã"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de ananás"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture o sumo de maçã, o sumo de ananás e o xarope de açúcar. Mexa suavemente e sirva.",
     "type": "Não Alcoólico",
     "alcoholPercentage": "0%",
     "description": "O Appletini Sem Álcool é uma versão sem álcool do famoso Appletini, com o sabor doce da maçã e a frescura do ananás. Ideal para desfrutar sem álcool."
-  }, 
+  },
+  {
+    "img": "/assets/images/Appletini.png",
+    "name": "Appletini",
+    "ingredients": [
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "vodka"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "liqueur de maçã verde"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      },
+      {
+        "quant": 5,
+        "unity": "ml",
+        "name": "sumo de limão (opcional)"
+      }
+    ],
+    "instructions": "Num shaker com gelo, combine a vodka, o liqueur de maçã verde e, se desejar, o sumo de limão. Agite bem e coe para um copo de martini. Sirva imediatamente.",
+    "type": "Alcoólico",
+    "alcoholPercentage": "25%",
+    "description": "O Appletini, também conhecido como Apple Martini, é um cocktail suave e doce com o sabor marcante da maçã verde. É uma escolha popular para muitos amantes de cocktails."
+  },
   {
     "img": "/assets/images/BloodyMary.png",
     "name": "Bloody Mary",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "vodka" },
-      { "quant": 100, "unity": "ml", "name": "sumo de tomate" },
-      { "quant": 15, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 2, "unity": null, "name": "gotas de molho picante" },
-      { "quant": 2, "unity": null, "name": "gotas de molho Worcestershire" },
-      { "quant": 1, "unity": null, "name": "pitada sal" },
-      { "quant": 1, "unity": null, "name": "pitada de pimenta preta" },
-      { "quant": null, "unity": null, "name": "Gelo" },
-      { "quant": 1, "unity": null, "name": "folha de aipo" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "vodka"
+      },
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de tomate"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "gotas de molho picante"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "gotas de molho Worcestershire"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "pitada sal"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "pitada de pimenta preta"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "folha de aipo"
+      }
     ],
     "instructions": "Num copo misturador, combine a vodka, o sumo de tomate, o sumo de limão, o molho picante, o molho Worcestershire, o sal e a pimenta. Encha o copo com gelo e mexa bem. Decore com uma folha de aipo.",
     "type": "Alcoólico",
@@ -355,10 +773,26 @@
     "img": "/assets/images/WhiskeySour.png",
     "name": "Whiskey Sour",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "whiskey bourbon" },
-      { "quant": 30, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 20, "unity": "ml", "name": "xarope simples" },
-      { "quant": null, "unity": null, "name": "Cereja maraschino para decorar" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "whiskey bourbon"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope simples"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Cereja maraschino para decorar"
+      }
     ],
     "instructions": "Num shaker, misture o whiskey bourbon, o sumo de limão e o xarope simples com gelo. Agite bem e coe para um copo de cocktail. Decore com uma cereja maraschino.",
     "type": "Alcoólico",
@@ -369,10 +803,26 @@
     "img": "/assets/images/Manhattan.png",
     "name": "Manhattan",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "whiskey bourbon" },
-      { "quant": 20, "unity": "ml", "name": "vermute doce" },
-      { "quant": 2, "unity": null, "name": "gotas angostura bitters" },
-      { "quant": null, "unity": null, "name": "Cereja maraschino para decorar" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "whiskey bourbon"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "vermute doce"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "gotas angostura bitters"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Cereja maraschino para decorar"
+      }
     ],
     "instructions": "Num copo misturador com gelo, misture o whiskey bourbon, o vermute doce e as angostura bitters. Mexa bem e coe em um copo de cocktail. Decore com uma cereja maraschino.",
     "type": "Alcoólico",
@@ -380,13 +830,29 @@
     "description": "O Manhattan é um cocktail clássico à base de whiskey bourbon, vermute doce e angostura bitters. É conhecido por sua sofisticação e sabor robusto."
   },
   {
-    "img": "assets/images/Negroni.png",
+    "img": "/assets/images/Negroni.png",
     "name": "Negroni",
     "ingredients": [
-      { "quant": 30, "unity": "ml", "name": "gin" },
-      { "quant": 30, "unity": "ml", "name": "vermute tinto" },
-      { "quant": 30, "unity": "ml", "name": "Campari" },
-      { "quant": 1, "unity": null, "name": "rodela de laranja para decorar" }
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "gin"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "vermute tinto"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "Campari"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "rodela de laranja para decorar"
+      }
     ],
     "instructions": "Em um copo de mistura com gelo, misture o gin, o vermute tinto e o Campari. Mexa bem e coe em um copo com gelo. Decore com uma rodela de laranja.",
     "type": "Alcoólico",
@@ -397,11 +863,31 @@
     "img": "/assets/images/TequilaSunrise.png",
     "name": "Tequila Sunrise",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "tequila" },
-      { "quant": 120, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 20, "unity": "ml", "name": "xarope de granadina" },
-      { "quant": null, "unity": null, "name": "Gelo" },
-      { "quant": 1, "unity": null, "name": "rodela de laranja para decorar" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "tequila"
+      },
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 20,
+        "unity": "ml",
+        "name": "xarope de granadina"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "rodela de laranja para decorar"
+      }
     ],
     "instructions": "Num copo alto com gelo, misture a tequila e o sumo de laranja. Adicione o xarope de granadina, deixando-o escorrer lentamente para o fundo do copo. Não mexa. Decore com uma rodela de laranja.",
     "type": "Alcoólico",
@@ -412,11 +898,31 @@
     "img": "/assets/images/Sazerac.png",
     "name": "Sazerac",
     "ingredients": [
-      { "quant": 60, "unity": "ml", "name": "whiskey rye" },
-      { "quant": 1, "unity": null, "name": "colher de sopa de açúcar" },
-      { "quant": 2, "unity": null, "name": "gotas de absinto" },
-      { "quant": 2, "unity": null, "name": "gotas de bitter de ervas" },
-      { "quant": 2, "unity": null, "name": "cascas de limão" }
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "whiskey rye"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "colher de sopa de açúcar"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "gotas de absinto"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "gotas de bitter de ervas"
+      },
+      {
+        "quant": 2,
+        "unity": null,
+        "name": "cascas de limão"
+      }
     ],
     "instructions": "Em um copo misturador, misture o açúcar, as gotas de absinto e as gotas de bitter de ervas. Adicione o whiskey rye e gelo. Mexa bem e coe em um copo previamente resfriado. Esprema a casca de limão sobre o copo e descarte-a e a outra utilize para decorar.",
     "type": "Alcoólico",
@@ -427,10 +933,26 @@
     "img": "/assets/images/AperolSpritz.png",
     "name": "Aperol Spritz",
     "ingredients": [
-      { "quant": 60, "unity": "ml", "name": "Aperol" },
-      { "quant": 90, "unity": "ml", "name": "vinho espumante" },
-      { "quant": 30, "unity": "ml", "name": "água com gás" },
-      { "quant": null, "unity": null, "name": "Rodela de laranja para decorar" }
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "Aperol"
+      },
+      {
+        "quant": 90,
+        "unity": "ml",
+        "name": "vinho espumante"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Rodela de laranja para decorar"
+      }
     ],
     "instructions": "Num copo com gelo, adicione o Aperol e o vinho espumante. Mexa suavemente e complete com a água com gás. Decore com uma rodela de laranja.",
     "type": "Alcoólico",
@@ -441,11 +963,31 @@
     "img": "/assets/images/Cosmopolitan.png",
     "name": "Cosmopolitan",
     "ingredients": [
-      { "quant": 40, "unity": "ml", "name": "vodka" },
-      { "quant": 15, "unity": "ml", "name": "Cointreau" },
-      { "quant": 15, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 30, "unity": "ml", "name": "sumo de arando" },
-      { "quant": 1, "unity": null, "name": "rodela de lima para decorar" }
+      {
+        "quant": 40,
+        "unity": "ml",
+        "name": "vodka"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "Cointreau"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "sumo de arando"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "rodela de lima para decorar"
+      }
     ],
     "instructions": "Num shaker com gelo, misture a vodka, o Cointreau, o sumo de limão e o sumo de arando. Agite bem e coe para um copo de cocktail. Decore com uma rodela de lima.",
     "type": "Alcoólico",
@@ -456,10 +998,26 @@
     "img": "/assets/images/Caipiroska.png",
     "name": "Caipiroska",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "vodka" },
-      { "quant": 2, "unity": "unidades", "name": "limão cortado em cubos" },
-      { "quant": 2, "unity": "colheres de chá", "name": "açúcar" },
-      { "quant": null, "unity": null, "name": "Gelo" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "vodka"
+      },
+      {
+        "quant": 2,
+        "unity": "unidades",
+        "name": "limão cortado em cubos"
+      },
+      {
+        "quant": 2,
+        "unity": "colheres de chá",
+        "name": "açúcar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Gelo"
+      }
     ],
     "instructions": "Num copo baixo, adicione o açúcar e o limão cortado em cubos. Macere bem para extrair o sumo. Adicione a vodka e o gelo. Mexa e sirva.",
     "type": "Alcoólico",
@@ -470,10 +1028,26 @@
     "img": "/assets/images/MoscowMule.png",
     "name": "Moscow Mule",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "vodka" },
-      { "quant": 120, "unity": "ml", "name": "ginger beer" },
-      { "quant": 15, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 1, "unity": null, "name": "folha de hortelã para decorar" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "vodka"
+      },
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "ginger beer"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "folha de hortelã para decorar"
+      }
     ],
     "instructions": "Num copo alto com gelo, adicione a vodka e o sumo de limão. Complete com ginger beer e mexa suavemente. Decore com uma folha de hortelã.",
     "type": "Alcoólico",
@@ -484,21 +1058,46 @@
     "img": "/assets/images/CubaLibre.png",
     "name": "Cuba Libre",
     "ingredients": [
-      { "quant": 50, "unity": "ml", "name": "rum branco" },
-      { "quant": 120, "unity": "ml", "name": "cola" },
-      { "quant": 15, "unity": "ml", "name": "sumo de limão" }
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "rum branco"
+      },
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "cola"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "sumo de limão"
+      }
     ],
     "instructions": "Num copo alto com gelo, adicione o rum branco e o sumo de limão. Complete com cola e mexa suavemente.",
     "type": "Alcoólico",
     "alcoholPercentage": "10%",
     "description": "O Cuba Libre é um cocktail simples e refrescante, feito com rum branco, cola e sumo de limão. É conhecido pelo seu sabor equilibrado e toque cítrico."
-  },{
+  },
+  {
     "img": "/assets/images/RefrescanteDeHortela.png",
     "name": "Refrescante de Hortelã",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "água com gás" },
-      { "quant": 6, "unity": null, "name": "folhas de hortelã" },
-      { "quant": 30, "unity": "ml", "name": "xarope de açúcar" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 6,
+        "unity": null,
+        "name": "folhas de hortelã"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "xarope de açúcar"
+      }
     ],
     "instructions": "Num copo alto, misture a água com gás, as folhas de hortelã e o xarope de açúcar. Adicione gelo e mexa bem.",
     "type": "Não Alcoólico",
@@ -509,10 +1108,26 @@
     "img": "/assets/images/Brontossauro.png",
     "name": "Brontossauro",
     "ingredients": [
-      { "quant": 150, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 50, "unity": "ml", "name": "sumo de maçã" },
-      { "quant": 50, "unity": "ml", "name": "sumo de uva" },
-      { "quant": 1,  "unity": null, "name": "fatia de laranja para decorar" }
+      {
+        "quant": 150,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de maçã"
+      },
+      {
+        "quant": 50,
+        "unity": "ml",
+        "name": "sumo de uva"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "fatia de laranja para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o sumo de laranja, o sumo de maçã e o sumo de uva. Adicione gelo e decore com uma fatia de laranja.",
     "type": "Não Alcoólico",
@@ -523,10 +1138,26 @@
     "img": "/assets/images/ShirleyTempleClassico.png",
     "name": "Shirley Temple Clássico",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "ginger ale" },
-      { "quant": 60, "unity": "ml", "name": "sumo de groselha" },
-      { "quant": null, "unity": null, "name": "Cereja maraschino para decorar" },
-      { "quant": null, "unity": null, "name":"Rodela de lima para decorar" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "ginger ale"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "sumo de groselha"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Cereja maraschino para decorar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Rodela de lima para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o ginger ale e o sumo de groselha. Adicione gelo e mexa. Decore com uma cereja maraschino e uma rodela de limão.",
     "type": "Não Alcoólico",
@@ -537,10 +1168,26 @@
     "img": "/assets/images/TubaraoDesdentado.png",
     "name": "Tubarão Desdentado",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 60, "unity": "ml", "name":"sumo de toranja" },
-      { "quant": 30, "unity": "ml", "name": "xarope simples" },
-      { "quant": null, "unity": null, "name": "Rodela de laranja para decorar" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "sumo de toranja"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "xarope simples"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Rodela de laranja para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o sumo de laranja, o sumo de toranja e o xarope simples. Adicione gelo e decore com uma rodela de laranja.",
     "type": "Não Alcoólico",
@@ -551,10 +1198,26 @@
     "img": "/assets/images/VirginScrewdriver.png",
     "name": "Virgin Screwdriver",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "sumo de laranja" },
-      { "quant": 60, "unity": "ml", "name": "água com gás" },
-      { "quant": null, "unity": null, "name": "Rodela de laranja para decorar" },
-      { "quant": null, "unity": null, "name": "Rodela de limão para decorar" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "sumo de laranja"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Rodela de laranja para decorar"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Rodela de limão para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o sumo de laranja e a água com gás. Adicione gelo e decore com uma rodela de laranja e uma rodela de limão.",
     "type": "Não Alcoólico",
@@ -565,10 +1228,26 @@
     "img": "/assets/images/Flamingo.png",
     "name": "Flamingo",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "sumo de toranja" },
-      { "quant": 60, "unity": "ml", "name": "sumo de abacaxi" },
-      { "quant": 60, "unity": "ml", "name": "água com gás" },
-      { "quant": 1, "unity": null, "name": "fatia de abacaxi para decorar" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "sumo de toranja"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "sumo de abacaxi"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 1,
+        "unity": null,
+        "name": "fatia de abacaxi para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o sumo de toranja, o sumo de abacaxi e a água com gás. Adicione gelo e decore com uma fatia de abacaxi.",
     "type": "Não Alcoólico",
@@ -579,10 +1258,26 @@
     "img": "/assets/images/CocktailRoseDeMai.png",
     "name": "Cocktail Rose De Mai",
     "ingredients": [
-      { "quant": 100, "unity": "ml", "name": "sumo de cranberry" },
-      { "quant": 60, "unity": "ml", "name": "sumo de limão" },
-      { "quant": 30, "unity": "ml", "name": "xarope simples" },
-      { "quant": null, "unity": null, "name":"Cereja maraschino para decorar" }
+      {
+        "quant": 100,
+        "unity": "ml",
+        "name": "sumo de cranberry"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "sumo de limão"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "xarope simples"
+      },
+      {
+        "quant": null,
+        "unity": null,
+        "name": "Cereja maraschino para decorar"
+      }
     ],
     "instructions": "Num copo alto, misture o sumo de cranberry, o sumo de limão e o xarope simples. Adicione gelo e decore com uma cereja maraschino.",
     "type": "Não Alcoólico",
@@ -593,10 +1288,26 @@
     "img": "/assets/images/LimonadaEspumanteCerejaVanilla.png",
     "name": "Limonada Espumante de Cereja-Vanilla",
     "ingredients": [
-      { "quant": 120, "unity": "ml", "name": "limonada" },
-      { "quant": 60, "unity": "ml", "name": "água com gás" },
-      { "quant": 30, "unity": "ml", "name": "xarope de cereja" },
-      { "quant": 15, "unity": "ml", "name": "xarope de baunilha" }
+      {
+        "quant": 120,
+        "unity": "ml",
+        "name": "limonada"
+      },
+      {
+        "quant": 60,
+        "unity": "ml",
+        "name": "água com gás"
+      },
+      {
+        "quant": 30,
+        "unity": "ml",
+        "name": "xarope de cereja"
+      },
+      {
+        "quant": 15,
+        "unity": "ml",
+        "name": "xarope de baunilha"
+      }
     ],
     "instructions": "Num copo alto, misture a limonada, a água com gás, o xarope de cereja e o xarope de baunilha. Adicione gelo e mexa bem.",
     "type": "Não Alcoólico",
