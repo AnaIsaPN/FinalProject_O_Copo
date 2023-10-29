@@ -122,7 +122,6 @@ export default function RecipeRegister() {
   };
 
   function addIngredientToAll(idx, field, value) {
-    console.log(inputs.ingredients);
     setInputs((prev) => ({
       ...prev,
       ingredients: prev.ingredients.map((e, i) =>
@@ -132,8 +131,6 @@ export default function RecipeRegister() {
   }
 
   const handleAddIngredient = (ingredient) => {
-    console.log("ingredient", ingredient);
-    console.log("inputs.ingredients", inputs.ingredients);
     setInputs((prev) => ({
       ...prev,
       ingredients: [...inputs.ingredients, ingredient],

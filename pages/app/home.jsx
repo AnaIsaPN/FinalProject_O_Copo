@@ -55,7 +55,7 @@ export default function HomePage() {
     setRandomB(true)
     const options = { method: 'GET' }
 
-    fetch(`http://localhost:3000/api/getRandom/${currentFilter}/randomDrink`, options)
+    fetch(`/api/getRandom/${currentFilter}/randomDrink`, options)
       .then(response => response.json())
       .then(response => {
         setRecipes(response.result)
