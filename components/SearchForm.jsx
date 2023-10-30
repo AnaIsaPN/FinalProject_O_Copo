@@ -7,7 +7,7 @@ export function SearchForm({ setCurrentSearch, currentSearch}) {
         <input
             value={currentSearch}
             className={styles.searchform}
-            type="search"
+            type="text"
             placeholder="Pesquisa por bebida ou ingrediente"
             onChange={e => {
                 const { value } = e.target
