@@ -1,0 +1,22 @@
+{
+  "img": "img do user",
+  "name": "nome do usuário",
+  "email": "email do usuário",
+  "password": "password",
+  "favorites":[],
+  "createdRecipes": [
+      {
+      "img": "nome do path da imagem",
+      "name": "nome da bebida",
+      "ingredientes":[
+      {   "quant": "quantidade",
+          "unity": "unidades em ml, g e un",
+          "name": "nome do ingrediente"   
+      }],
+      "instructions": "Modo de preparação",
+      "type": "Alcoolico ou não Alcoolico",
+      "alcoholPercentage": "percentagem de alcool",
+      "description": "uma breve descrição da bebida"
+      }
+  ]
+}

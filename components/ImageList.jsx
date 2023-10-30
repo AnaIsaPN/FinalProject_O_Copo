@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from "./ImageList.module.css"
-
 import ApplePie from '../public/assets/images/ApplePie.png';
 import Bellini from '../public/assets/images/Bellini.png';
 import Blizzard from '../public/assets/images/Blizzard.png';
@@ -25,7 +24,6 @@ import WhiteChristmasDream from '../public/assets/images/WhiteChristmasDream.png
 export default function ImageList({ onSelect }) { 
 
     const images = [ApplePie, Bellini, Blizzard, BocceBall, Bramble, Caipiruva, Caipirinha1, ChocolateKiss, CoconutBlueHawaiian, French, Gin, GinSwizzle, HangmasBlood, RedRoyal, RedRussian, Smoothie, Smoothie1, StrawberryCoconutKiwi, SwimmingPool, WhiteChristmasDream];
-    console.log(images[0].src)
 
     return (
         <div className={styles.container}>

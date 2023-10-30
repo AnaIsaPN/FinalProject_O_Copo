@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import styles from "./RandomButton.module.css"
 
 export function RandomButton({ generateRadomDrinks }) {

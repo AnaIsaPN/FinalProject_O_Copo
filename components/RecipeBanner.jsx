@@ -2,10 +2,7 @@ import styles from "./RecipeBanner.module.css"
 import { HeartFav } from "@/components/HeartFav";
 
 export function RecipeBanner({ drink, setUserFavorite, isFavorite, isUserRecipe }) {
-
-
     return (
-
         <div className={styles.container}>
             <div className={styles.title}>
                 <h2>{drink?.name}</h2>

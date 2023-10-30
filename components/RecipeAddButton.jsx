@@ -1,6 +1,5 @@
 import styles from "./RecipeAddButton.module.css"
 
-
 export function RecipeAddButton({ onSubmit }) {
     return (
             <button

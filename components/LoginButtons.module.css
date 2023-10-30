@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10rem;
+  gap: 8rem;
 }
 
 .buttonsH {
@@ -12,23 +12,24 @@
 
 .butPassw {
   color: var(--sc-text-color);
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   font-weight: 500;
   border-style: none;
   background: none;
+  font-size: 1.2rem;
 }
 
 .butEnter {
   border-style: none;
   background: none;
   color: var(--sc-btn-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
 .butReg {
   color: var(--sc-btn-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   border-style: none;
   background: none;
@@ -36,8 +37,62 @@
 
 .butVisit {
   color: var(--text-color);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   border-style: none;
   background: none;
+}
+
+.containerPopUpButtons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: var(--text-color);
+  border-radius: 2rem;
+}
+
+.messagePopUp{
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.popUp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 80%;
+  height: 30%;
+  transform: translate(13%, 100%);
+  background-color: var(--card-color);
+  box-shadow: 1px 2px 20px 14px #1852f01f;
+  border-radius: 2.4rem;
+}
+
+.popUpButtons{
+  background-color: var(--sc-btn-color);
+  color: #FCFCFC;
+  border-radius: 2rem;
+  width: 7rem;
+  height: 4rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.inputEmail{
+  border-radius: 2rem;
+  height: 4rem;
+  width: 26rem;
+  border: 0.1rem solid var(--sc-btn-color);
+  padding: 1rem;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  background-color: transparent;
+}
+
+.inputEmail::placeholder{
+  text-align: center;
 }

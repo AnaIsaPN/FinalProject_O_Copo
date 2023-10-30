@@ -9,6 +9,7 @@
     background-repeat: no-repeat;
     background-position: 1rem 1rem; 
     background-color: transparent;
+    color: var(--text-color);
 }
 
 .searchform::placeholder{

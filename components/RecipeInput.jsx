@@ -9,12 +9,6 @@ export function RecipeInput({ title, handleChangeIngredient, field, grows, input
 
   useAutoSizeTextArea(textAreaRef.current, value);
 
-  // Esse codigo esta causando duplo clique no input
-
-  // const handleMouseDown = (e) => {
-  //   e.target.select();
-  // };
-
   const handleChange = (e) => {
     handleChangeIngredient(e.target.value, field)
     let val = e.target?.value;
@@ -26,7 +20,6 @@ export function RecipeInput({ title, handleChangeIngredient, field, grows, input
     if (!grows && val.length > 25) {
       val = val.slice(0, 25)
     }
-    console.log("oi", inputValue)
     setValue(val);
   };
 
@@ -38,10 +31,9 @@ export function RecipeInput({ title, handleChangeIngredient, field, grows, input
       type="text"
       placeholder={title}
       onChange={(e) => handleChange(e)}
-      // onMouseDown={handleMouseDown}
       ref={textAreaRef}
       rows={1}
-      value={inputValue[field]} // estava "value" do state, caso dê erro futuramente
+      value={inputValue[field]}
       required
     ></textarea>
   );

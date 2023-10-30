@@ -115,7 +115,7 @@ export default function HomePage() {
             />
           </div>
 
-          {recipes.length === 0 && currentSearch.length > 1 ?
+          {recipes && recipes.length === 0 && currentSearch.length > 1 ?
             <h2 className={styles.notFountTitle}>Não encontrámos resultados!</h2>
             : <div className={styles.cards}>
               <CardList list={recipes} size={"small"} />

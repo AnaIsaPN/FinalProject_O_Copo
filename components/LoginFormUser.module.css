@@ -7,7 +7,7 @@
 }
 
 .loginFormUser {
-  padding-left: 1rem;
+  padding: 1rem;
   width: 18.5rem;
   height: 3.8rem;
   border-radius: 2.4rem;
@@ -28,12 +28,17 @@
   width: 18.5rem;
   height: 3.8rem;
   border-radius: 2.4rem;
-  text-align: center;
   background: var(--btn-color);
   background-color: transparent;
   color: var(--text-color);
   border: 2px solid red;
   animation: shake 0.5s;
+}
+
+.inputError::placeholder{
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 
 @keyframes shake {

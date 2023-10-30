@@ -1,6 +1,5 @@
 import styles from "./EmptyMyRecipesMessage.module.css"
 
-
 export function EmptyMyRecipesMessage({ message }) {
   return (
     <div className={styles.container}>

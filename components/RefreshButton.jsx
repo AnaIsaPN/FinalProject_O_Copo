@@ -1,6 +1,5 @@
 import styles from "./RefreshButton.module.css"
 
-
 export function RefreshButton({resetButton}) {
     return (
         <button className={styles.refreshButton}

@@ -1,47 +1,47 @@
-import styles from "./FilterButton.module.css"
-import { useState, useEffect, useRef } from "react"
+import styles from "./FilterButton.module.css";
+import { useState, useEffect, useRef } from "react";
 
 export function FilterButton({ selectedOption, setCurrentFilter, setSelectedOption }) {
     const [isOptionsVisible, setOptionsVisible] = useState(false);
     const optionsRef = useRef(null);
+    const buttonRef = useRef(null);
 
     useEffect(() => {
-        const handleDocumentClick = (event) => {
-            if (isOptionsVisible && optionsRef.current && !optionsRef.current.contains(event.target)) {
+        const handleDocumentMouseDown = (event) => {
+            if (optionsRef.current && (optionsRef.current.contains(event.target) || buttonRef.current.contains(event.target))) {
+                return;
+            }
+    
+            if (isOptionsVisible) {
                 setOptionsVisible(false);
             }
         };
-
-        document.addEventListener('mousedown', handleDocumentClick);
-
+    
+        document.addEventListener('mousedown', handleDocumentMouseDown);
+    
         return () => {
-            document.removeEventListener('mousedown', handleDocumentClick);
+            document.removeEventListener('mousedown', handleDocumentMouseDown);
         };
     }, [isOptionsVisible]);
-    
+
     const handleClick = () => {
-        if (isOptionsVisible) {
-            setOptionsVisible(false);
-        } else {
-            setOptionsVisible(true);
-        }
+        setOptionsVisible(prev => !prev);
     };
 
     const handleOptionClick = (option) => {
         if (selectedOption === option) {
             setSelectedOption("todas");
-            setCurrentFilter("todas")
+            setCurrentFilter("todas");
         } else {
             setSelectedOption(option);
-            setCurrentFilter(option)
+            setCurrentFilter(option);
         }
-        setOptionsVisible(false)
+        setOptionsVisible(false);
     };
-
 
     return (
         <div className={styles.container}>
-            <button className={styles.FilterButton}
+            <button ref={buttonRef} className={styles.FilterButton}
                 onClick={handleClick}>
                 <img src="/assets/icons/icon-filter.svg" alt="" />
             </button>
@@ -63,5 +63,5 @@ export function FilterButton({ selectedOption, setCurrentFilter, setSelectedOpti
                 </div>
             )}
         </div>
-    )
+    );
 }

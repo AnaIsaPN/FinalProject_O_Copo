@@ -121,3 +121,8 @@
   z-index: 1000;
   overflow: scroll;
 }
+
+.about {
+  padding-bottom: 6rem;
+  padding-top: 4rem;
+}

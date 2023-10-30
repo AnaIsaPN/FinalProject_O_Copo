@@ -1,8 +1,6 @@
 import styles from "./RecipeDeleteButton.module.css"
 
-
 export function RecipeDeleteButton({ handleClick }) {
-
     return (
         <div className={styles.buttons}>
             <button

@@ -1,9 +1,7 @@
 import styles from "./NavBar.module.css"
 import Link from "next/link";
 
-
 export function NavBar() {
-
     return (
         <div className={styles.container}>
             <Link

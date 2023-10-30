@@ -22,7 +22,6 @@ export async function GetUserById(userId) {
   return result;
 }
 
-//Modificar img
 export async function ChangeUserImgProf(userId, userImg) {
   const collection = await GetCollection("Copo", "users");
   const result = await collection.updateOne(

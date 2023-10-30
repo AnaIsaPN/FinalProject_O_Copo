@@ -1,6 +1,5 @@
 import styles from "./EmptyFavoritesMessage.module.css"
 
-
 export function EmptyFavoritesMessage({ message }) {
   return (
     <div className={styles.container}>

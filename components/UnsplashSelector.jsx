@@ -1,4 +1,3 @@
-// components/UnsplashSelector.js
 import React, { useState } from 'react';
 import unsplash from '../utils/Unsplash';
 import styles from "./UnsplashSelector.module.css"

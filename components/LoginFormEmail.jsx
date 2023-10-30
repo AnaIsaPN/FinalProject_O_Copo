@@ -10,7 +10,7 @@ export function LoginFormEmail({inputs, setInputs, errAnime}) {
         <img src="/assets/icons/icon-email.svg" />
   
         <input
-          className={errAnime && inputs.email === "" ? styles.inputError : styles.loginFormEmail}
+          className={errAnime && inputs.email === "" || errAnime && !inputs.email.includes("@")? styles.inputError : styles.loginFormEmail}
           type="email"
           placeholder="@email"
           value={inputs.email}

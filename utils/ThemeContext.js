@@ -3,9 +3,8 @@ import { createContext, useContext, useEffect, useState } from 'react';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light'); // default to light theme
+  const [theme, setTheme] = useState('light');
 
-  // Toggle theme function
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark');
@@ -15,7 +14,6 @@ export const ThemeProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // If user has previously selected a theme, use it
     const localTheme = window.localStorage.getItem('theme');
     if (localTheme) {
       setTheme(localTheme);
@@ -23,10 +21,8 @@ export const ThemeProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    // Save to localStorage
     window.localStorage.setItem('theme', theme);
 
-    // Set the theme on document
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 

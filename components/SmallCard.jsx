@@ -1,12 +1,8 @@
 import styles from "./SmallCard.module.css"
 import Link from "next/link";
 
-
 export function SmallCard({ drink }) {
 
-   // const localStoreUser = JSON.parse(localStorage.getItem('user'));
-   // const isRecipe = localStoreUser.createdRecipes.some(userRecipe => userRecipe.name === drink.name)
-   
    return (
       <Link
          className={styles.container}

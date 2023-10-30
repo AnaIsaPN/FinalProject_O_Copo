@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 import UnsplashSelector from './UnsplashSelector';
 import Router from "next/router";
+import { AboutButton } from "./AboutButton";
 
 export function UserProfile() {
   const [user, setUser] = useState(null)
@@ -138,6 +139,9 @@ export function UserProfile() {
         </div>
 
       }
+      <div className={styles.about}>
+        <AboutButton />
+      </div>
     </div>
   );
 }

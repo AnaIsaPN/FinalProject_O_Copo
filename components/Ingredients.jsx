@@ -1,6 +1,5 @@
 import styles from "./Ingredients.module.css"
 
-
 export function Ingredients({ drink }) {
 
     const getIngredientString = (ingredient) => {

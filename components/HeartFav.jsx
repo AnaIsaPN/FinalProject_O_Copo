@@ -1,6 +1,3 @@
-import { useState } from 'react';
-
-
 export function HeartFav({ onFavClick, isFavorite }) {
   
   const handleClick = () => {

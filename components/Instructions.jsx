@@ -1,6 +1,5 @@
 import styles from "./Instructions.module.css"
 
-
 export function Instructions({ drink }) {
     return (
         <div className={styles.containter}>

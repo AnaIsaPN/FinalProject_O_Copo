@@ -2,7 +2,6 @@ import styles from "./Header.module.css"
 import { useRouter } from 'next/router'
 import { useTheme } from '@/utils/ThemeContext';
 
-
 export function Header({ title, showBackButton, showDarkModeButton }) {
     const router = useRouter()
     const { theme, toggleTheme } = useTheme();

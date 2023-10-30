@@ -1,0 +1,20 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutButton{
+    display: flex;
+    gap: 1rem;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+}
+
+.aboutButton p {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--sub-title-color);
+    font-weight: 700;
+}
